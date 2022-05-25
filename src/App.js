@@ -6,10 +6,8 @@ import Word from "./components/Word";
 import randomWords from "random-words";
 import Popup from "./components/Popup";
 import Notification from "./components/Notification";
-
 import { showNotification as notify } from "./helpers/notification";
 import "./App.css";
-
 let generatedWord = randomWords();
 console.log(generatedWord);
 
