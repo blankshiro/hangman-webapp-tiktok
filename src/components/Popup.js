@@ -10,7 +10,10 @@ const Popup = ({ correctLetters, wrongLetters, generatedWord, setPlayable, playA
 
     if (checkWin(correctLetters, wrongLetters, generatedWord) === "win") {
         message = "You won!";
-        end = "Congratulations!";
+        reveal = "Congratulations! You guessed the word: ";
+        revealWord = `${generatedWord}`;
+        end = `!`;
+
         playable = false;
     } else if (checkWin(correctLetters, wrongLetters, generatedWord) === "lose") {
         message = "You lost. Try again!";
